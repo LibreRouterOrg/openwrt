@@ -13,6 +13,11 @@ packages into package/feeds/
 4. Run `make` to build your firmware. After choosing the options in the ncurses
 menu, choose Exit and then Yes when asked if you want to save.
 
+### Building in docker container
+
+You need Docker installed, if you don't have it run `wget -O - https://get.docker.com | bash` to install.
+
+Simply run `docker run -it luandro/libremesh bash` or clone this repository and create a `docker build` yourself after you've modified the necessary files. Inside the container `cd openwrt` and run `make menuconfig` to select your targets and packages. Finally run `make` to build.
 
 ## Development of LibreMesh packages
 
